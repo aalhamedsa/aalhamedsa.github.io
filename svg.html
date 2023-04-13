@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart City Background Design</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+    svg {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#2a5298;stop-opacity:1" />
+      </linearGradient>
+      <g id="building">
+        <rect width="50" height="100" fill="#ffffff" />
+        <rect width="10" height="10" x="5" y="5" fill="#1e3c72" />
+        <rect width="10" height="10" x="25" y="5" fill="#1e3c72" />
+        <rect width="10" height="10" x="5" y="25" fill="#1e3c72" />
+        <rect width="10" height="10" x="25" y="25" fill="#1e3c72" />
+        <rect width="10" height="10" x="5" y="45" fill="#1e3c72" />
+        <rect width="10" height="10" x="25" y="45" fill="#1e3c72" />
+        <rect width="10" height="10" x="5" y="65" fill="#1e3c72" />
+        <rect width="10" height="10" x="25" y="65" fill="#1e3c72" />
+        <rect width="10" height="10" x="5" y="85" fill="#1e3c72" />
+        <rect width="10" height="10" x="25" y="85" fill="#1e3c72" />
+      </g>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#gradient)" />
+    
+    <!-- Buildings -->
+    <use xlink:href="#building" x="100" y="600" />
+    <use xlink:href="#building" x="200" y="550" />
+    <use xlink:href="#building" x="300" y="580" />
+    <use xlink:href="#building" x="400" y="530" />
+    <use xlink:href="#building" x="500" y="570" />
+
+    <!-- Cars -->
+    <rect width="40" height="20" x="100" y="700" fill="#ffffff" rx="5" ry="5" />
+    <rect width="40" height="20" x="160" y="700" fill="#ffffff" rx="
